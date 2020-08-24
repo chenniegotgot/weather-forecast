@@ -1,0 +1,147 @@
+html, body {
+    /*background-color: #e8e8e8;*/
+    background-color: #263a50;
+    color: #636b6f;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 200;
+    height: 100vh;
+    margin: 0;
+}
+
+.full-height {
+    height: 100vh;
+}
+
+.flex-center {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.position-ref {
+    position: relative;
+}
+
+.top-right {
+    position: absolute;
+    right: 10px;
+    top: 18px;
+}
+
+.content {
+    text-align: center;
+}
+
+.title {
+    font-size: 84px;
+}
+
+.links > a {
+    color: #636b6f;
+    padding: 0 25px;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: .1rem;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.m-b-md {
+    margin-bottom: 30px;
+}
+
+#weather-forecast {
+	color: #bda176;
+}
+
+#city_form {
+    /*border: 1px solid;
+    border-radius: 8px;
+    padding: 0 35px;
+    */
+    color: antiquewhite;
+}
+
+.message {
+    color: red;
+}
+
+.loader {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background: url('../images/loader.gif') 50% 50% no-repeat;
+}
+
+/* SECTION #2
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.ajax-header {
+  margin: 70px 0 0;
+}
+
+.ajax-section {
+  margin: 70px 0 20px;
+}
+
+.ajax-section .cities {
+  display: grid;
+  grid-gap: 32px 20px;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.ajax-section .city {
+  position: relative;
+  padding: 40px 10%;
+  border-radius: 20px;
+  background: var(--text_light);
+  color: var(--text_med);
+}
+
+.ajax-section .city::after {
+  content: '';
+  width: 90%;
+  height: 50px;
+  position: absolute;
+  bottom: -12px;
+  left: 5%;
+  z-index: -1;
+  opacity: 0.3;
+  border-radius: 20px;
+  background: var(--text_light);
+}
+
+.ajax-section figcaption {
+  margin-top: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.ajax-section .city-temp {
+  font-size: 5rem;
+  font-weight: bold;
+  margin-top: 5px;
+  color: var(--text_dark);
+}
+
+.ajax-section .city sup {
+  font-size: 0.5em;
+}
+
+.ajax-section .city-name sup {
+  padding: 0.2em 0.6em;
+  border-radius: 30px;
+  color: #fff;
+  background: var(--orange);
+}
+
+.ajax-section .city-name {
+  margin-top: -45px;
+}
+
+.ajax-section .city-icon {
+  width: 100px;
+  height: 100px;
+}
